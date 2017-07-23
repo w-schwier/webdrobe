@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-describe 'restaurants listing page' do
+describe 'garments listing page' do
   it 'tells me there are no restaurants' do
-    visit '/restaurants'
-    expect(page).to have_content 'No restaurants yet'
+    visit '/garments'
+    expect(page).to have_content 'No garments yet'
   end
 end
