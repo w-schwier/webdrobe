@@ -16,6 +16,7 @@
     <%= form.text_field :sort, id: :garment_sort %>
   </div>
 
+
   <div class="field">
     <%= form.label :length %>
     <%= form.text_field :length, id: :garment_length %>
@@ -24,6 +25,11 @@
   <div class="field">
     <%= form.label :notes %>
     <%= form.text_area :notes, id: :garment_notes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :garment_image, :required => true %>
   </div>
 
   <div class="actions">

@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Sort:</strong>
+  <strong>Type:</strong>
   <%= @garment.sort %>
+  <%= link_to image_tag(@garment.image.url, id: :garment_image), @garment.image.url, target: '_blank' %>
 </p>
 
 <p>

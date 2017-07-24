@@ -69,6 +69,6 @@ class GarmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def garment_params
-      params.require(:garment).permit(:sort, :length, :notes)
+      params.require(:garment).permit(:sort, :length, :notes, :image)
     end
 end
