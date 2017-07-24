@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sort:</strong>
+  <%= @garment.sort %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @garment.length %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @garment.notes %>
+</p>
+
+<%= link_to 'Edit', edit_garment_path(@garment) %> |
+<%= link_to 'Back', garments_path %>
