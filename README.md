@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Currently being build as a side project while I look for employment.
 
-Things you may want to cover:
+The idea is to make a online wardrobe, making it easier to view and match clothes while shopping or at a friends.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project is currently in its very infant stages, but soon I hope you have it online, hosted on either Heroku or AWS.
