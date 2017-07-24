@@ -1,0 +1,38 @@
+<%= form_with(model: garment, local: true) do |form| %>
+  <% if garment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(garment.errors.count, "error") %> prohibited this garment from being saved:</h2>
+
+      <ul>
+      <% garment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :sort %>
+    <%= form.text_field :sort, id: :garment_sort %>
+  </div>
+
+
+  <div class="field">
+    <%= form.label :length %>
+    <%= form.text_field :length, id: :garment_length %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notes %>
+    <%= form.text_area :notes, id: :garment_notes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :garment_image, :required => true %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

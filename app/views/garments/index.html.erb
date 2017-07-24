@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Garments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sort</th>
+      <th>Length</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @garments.each do |garment| %>
+      <tr>
+        <td><%= garment.sort %></td>
+        <td><%= garment.length %></td>
+        <td><%= garment.notes %></td>
+        <td><%= link_to 'Show', garment %></td>
+        <td><%= link_to 'Edit', edit_garment_path(garment) %></td>
+        <td><%= link_to 'Destroy', garment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Garment', new_garment_path %>
