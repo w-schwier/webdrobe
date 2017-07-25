@@ -15,6 +15,7 @@
   <tbody>
     <% @garments.each do |garment| %>
       <tr>
+        <td><%= link_to image_tag(garment.image.url, id: :garment_image), garment.image.url, target: '_blank' %></dt>
         <td><%= garment.sort %></td>
         <td><%= garment.length %></td>
         <td><%= garment.notes %></td>
