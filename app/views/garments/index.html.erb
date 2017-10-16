@@ -13,16 +13,20 @@
   </thead>
 
   <tbody>
-    <% @garments.each do |garment| %>
-      <tr>
-        <td><%= link_to image_tag(garment.image.url, id: :garment_image), garment.image.url, target: '_blank' %></dt>
-        <td><%= garment.sort %></td>
-        <td><%= garment.length %></td>
-        <td><%= garment.notes %></td>
-        <td><%= link_to 'Show', garment %></td>
-        <td><%= link_to 'Edit', edit_garment_path(garment) %></td>
-        <td><%= link_to 'Destroy', garment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <% if @garments.any? %>
+      <% @garments.each do |garment| %>
+        <tr>
+          <td><%= link_to image_tag(garment.image.url, id: :garment_image), garment.image.url, target: '_blank' %></dt>
+          <td><%= garment.sort %></td>
+          <td><%= garment.length %></td>
+          <td><%= garment.notes %></td>
+          <td><%= link_to 'Show', garment %></td>
+          <td><%= link_to 'Edit', edit_garment_path(garment) %></td>
+          <td><%= link_to 'Destroy', garment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    <% else %>
+      No garments yet
     <% end %>
   </tbody>
 </table>
