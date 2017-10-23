@@ -36,5 +36,7 @@ As a user, so that I know what clothes are clean, I want to be able to mark clot
 
 As a user, so that I can plan outfits, I want to be able to show selected items together.
 
+As a user, so that I can plan for the week ahead, I want to save outfits to a calender.
+
 ### Challenges
 
