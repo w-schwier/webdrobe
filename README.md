@@ -32,6 +32,7 @@ In a web browser visit [http://localhost:3000/garments](http://localhost:3000/ga
 
 As a user, so that I can see what clothes I have where, I want to be able to distinguish between locations.
 
+As a user, so that I know what clothes are clean, I want to be able to mark clothes as dirty.
 
 ### Challenges
 
