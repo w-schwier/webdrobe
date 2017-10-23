@@ -38,5 +38,7 @@ As a user, so that I can plan outfits, I want to be able to show selected items 
 
 As a user, so that I can plan for the week ahead, I want to save outfits to a calender.
 
+As a user going on holiday, so that I know what I've packed, I want to be able to move items into a suitcase.
+
 ### Challenges
 
