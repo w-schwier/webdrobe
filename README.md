@@ -30,6 +30,8 @@ In a web browser visit [http://localhost:3000/garments](http://localhost:3000/ga
 
 ### User Stories
 
+As a user, so that I can see what clothes I have where, I want to be able to distinguish between locations.
+
 
 ### Challenges
 
