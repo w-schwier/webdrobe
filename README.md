@@ -34,5 +34,7 @@ As a user, so that I can see what clothes I have where, I want to be able to dis
 
 As a user, so that I know what clothes are clean, I want to be able to mark clothes as dirty.
 
+As a user, so that I can plan outfits, I want to be able to show selected items together.
+
 ### Challenges
 
